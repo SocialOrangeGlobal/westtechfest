@@ -1,0 +1,366 @@
+.site-footer {
+  background-color: var(--bg-canvas-dark);
+  color: var(--text-white);
+  position: relative;
+}
+
+.footer-cta {
+  position: relative;
+  padding: 8rem 0;
+}
+
+.footer-cta::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--bg-gradient-brand);
+}
+
+
+
+.cta-container {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2.5rem;
+}
+
+.cta-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.cta-date {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.cta-title {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  color: var(--text-white);
+}
+
+@media (min-width: 1024px) {
+  .cta-title {
+    font-size: 4.5rem;
+    max-width: 56rem;
+  }
+}
+
+.cta-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* Bottom footer */
+.footer-bottom {
+  padding: 5rem 0;
+  background-color: #000;
+}
+
+.fb-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+@media (min-width: 1024px) {
+  .fb-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.fb-logo-text {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--text-white);
+}
+
+.fb-right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.fb-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-width: 8rem;
+}
+
+.fb-col-title {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+}
+
+.fb-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.fb-list a {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.fb-list a:hover {
+  color: var(--text-white);
+}
+
+.fb-social {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid #333;
+  color: var(--text-white);
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.social-link:hover {
+  border-color: var(--accent-solid);
+  color: var(--accent-solid);
+}
+
+/* Newsletter Section in Footer */
+.footer-newsletter {
+  border-top: 1px solid #222;
+  padding: 4rem 0;
+}
+
+.fn-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .fn-inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.fn-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  margin-bottom: 1rem;
+}
+
+.fn-tag {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+.fn-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-white);
+  line-height: 1.2;
+  max-width: 25rem;
+}
+
+.fn-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .fn-form {
+    flex-direction: row;
+    width: auto;
+  }
+}
+
+.fn-input {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  color: var(--text-white);
+  padding: 1rem 1.5rem;
+  font-size: 0.875rem;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+  transition: border-color 0.3s;
+  min-width: 300px;
+}
+
+.fn-input:focus {
+  border-color: var(--accent-solid);
+}
+
+.fn-submit {
+  background: var(--bg-gradient-brand);
+  color: var(--text-white);
+  font-family: 'Roboto Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  padding: 1rem 2rem;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s;
+}
+
+.fn-submit:hover {
+  opacity: 0.9;
+}
+
+/* Acknowledgement Section */
+.footer-acknowledgement {
+  border-top: 1px solid #222;
+  padding: 4rem 0;
+}
+
+.ack-text {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+/* Copyright Section */
+.footer-copyright {
+  border-top: 1px solid #222;
+  padding: 2rem 0 3rem;
+}
+
+.copyright-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .copyright-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.copy-left {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.copy-right {
+  display: flex;
+  gap: 2rem;
+}
+
+.copy-right a {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.copy-right a:hover {
+  color: var(--text-white);
+}
+
+/* Social Link Grid adjustment */
+.fb-social {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  width: max-content;
+}
+
+.social-link {
+  border-radius: 0;
+  margin: -1px 0 0 -1px;
+}
+
+/* Additional Mobile Breakpoints for Footer */
+@media (max-width: 768px) {
+  .cta-title {
+    font-size: 2.2rem;
+  }
+  
+  .footer-cta {
+    padding: 4rem 0;
+  }
+  
+  .footer-bottom {
+    padding: 3rem 0;
+  }
+  
+  .fb-right {
+    gap: 2rem;
+    flex-direction: column;
+  }
+  
+  .fn-input {
+    min-width: 100%;
+    width: 100%;
+  }
+  
+  .footer-newsletter {
+    padding: 2.5rem 0;
+  }
+  
+  .footer-acknowledgement {
+    padding: 2.5rem 0;
+  }
+}

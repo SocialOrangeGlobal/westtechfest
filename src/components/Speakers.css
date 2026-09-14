@@ -1,0 +1,123 @@
+.speakers {
+  padding: 6rem 0;
+  background-color: var(--bg-surface-light);
+  color: var(--text-black);
+}
+
+.speakers-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 3.5rem;
+}
+
+.speakers-title-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .speakers-title-row {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}
+
+.speakers-title {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+@media (min-width: 1024px) {
+  .speakers-title { font-size: 4rem; }
+}
+
+.view-all-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent-solid);
+}
+
+.view-all-link:hover {
+  filter: brightness(0.9);
+}
+
+.speakers-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .speakers-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+}
+
+@media (min-width: 1024px) {
+  .speakers-grid { grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+}
+
+.speaker-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  transition: transform 0.3s;
+}
+
+.speaker-card:hover .speaker-img {
+  transform: scale(1.03);
+}
+
+.speaker-img-wrapper {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--bg-canvas-light);
+}
+
+.speaker-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.speaker-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.speaker-name {
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.speaker-role {
+  font-size: 0.875rem;
+  color: var(--text-secondary-on-light);
+  line-height: 1.5;
+}
+
+/* Mobile Responsiveness Updates */
+@media (max-width: 1024px) {
+  .speakers-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  .speakers-grid { grid-template-columns: 1fr; }
+  .speakers-title { font-size: 2.5rem; }
+  .speakers-section { padding: 4rem 0; }
+}

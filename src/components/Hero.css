@@ -1,0 +1,240 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+  background-image: url('https://www.westtechfest.com.au/west-tech-fest-2026-hero-poster.webp');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: var(--text-white);
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.hero-container {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.875rem;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--text-tertiary);
+  margin-bottom: 2.5rem;
+}
+
+.hero-meta .divider {
+  display: inline-block;
+  height: 1px;
+  width: 2rem;
+  background-color: var(--border-line-strong);
+}
+
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .hero-title { font-size: 6rem; }
+}
+
+.title-line1 {
+  color: var(--text-white);
+}
+
+.title-line2 {
+  background: linear-gradient(90deg, #ff6a3d 0%, #ff8e6a 100%);
+  color: var(--text-black);
+  padding: 0 0.5rem;
+  width: fit-content;
+  display: inline-block;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
+@media (min-width: 1024px) {
+  .hero-content {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}
+
+.hero-desc {
+  max-width: 500px;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: var(--text-white);
+}
+
+.hero-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .hero-actions {
+    flex-direction: row;
+  }
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #000;
+  margin-top: 5rem;
+}
+
+@media (min-width: 1024px) {
+  .banner {
+    aspect-ratio: 21 / 9;
+  }
+}
+
+.banner-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+  font-family: 'Roboto Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--text-white);
+  text-align: center;
+}
+
+.banner-footer .divider {
+  height: 12px;
+  width: 1px;
+  background-color: var(--text-white);
+  opacity: 0.5;
+}
+
+/* Stats Bar */
+.stats-bar {
+  border-top: 1px solid var(--border-line);
+  border-bottom: 1px solid var(--border-line);
+  background-color: #000;
+}
+
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .stats-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem 1.5rem;
+    padding: 1.25rem 0;
+    justify-items: start;
+  }
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.stat-text {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-white);
+}
+
+/* Mobile Responsiveness Updates */
+@media (max-width: 768px) {
+  .hero-title { font-size: 2.5rem; }
+  .hero-meta { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+  .hero-content { flex-direction: column; gap: 1.5rem; }
+  .hero-actions { flex-direction: column; width: 100%; gap: 0.75rem; }
+  .hero-actions .btn-primary,
+  .hero-actions .btn-secondary { width: 100%; text-align: center; justify-content: center; }
+  .hero-container { padding-top: 4rem; padding-bottom: 2rem; }
+
+  /* Compact banner on tablet */
+  .banner { margin-top: 2rem; aspect-ratio: 4 / 3; }
+
+  /* Hide banner divider on mobile — too cramped */
+  .banner-footer .divider { display: none; }
+  .banner-footer {
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 9px;
+    padding: 0.75rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title { font-size: 2rem; word-break: break-word; }
+  .title-line2 { max-width: 100%; white-space: normal; display: block; }
+  .hero-desc { font-size: 0.95rem; }
+  /* Hide banner on very small screens to avoid clutter */
+  .banner { display: none; }
+  /* Stats: compact 2-column */
+  .stats-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 1rem;
+    padding: 1rem 0;
+  }
+}
