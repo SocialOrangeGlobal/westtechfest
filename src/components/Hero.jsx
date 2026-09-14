@@ -37,7 +37,7 @@ const Hero = () => {
           </div>
 
           <div className="banner">
-             <video autoPlay loop muted playsInline className="banner-video">
+             <video autoPlay loop muted playsInline crossOrigin="anonymous" className="banner-video">
                <source src="https://cijhivxxnxe7zfen.public.blob.vercel-storage.com/WTF-BannerAnimation_260730.mp4?2026-08-05T23%3A53%3A08.730Z" type="video/mp4" />
              </video>
              <div className="banner-footer">
