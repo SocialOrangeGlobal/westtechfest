@@ -214,15 +214,21 @@
 @media (max-width: 768px) {
   .partners-content { padding: 3rem 0; gap: 2rem; }
 
-  /* Fix meta row — stack vertically instead of side-by-side */
+  /* Fix meta row — stack vertically and center */
   .p-meta {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
     gap: 0.5rem;
+  }
+  
+  .partners-header {
+    align-items: center;
+    text-align: center;
   }
 
   /* Smaller heading */
-  .p-title { font-size: 2rem; }
+  .p-title { font-size: 2rem; text-align: center; }
 
   /* Partner grids — 1 col top, 2 col bottom */
   .p-grid-top { grid-template-columns: 1fr; }
@@ -232,10 +238,10 @@
   .partner-box.large { min-height: 8rem; padding: 1.5rem; }
   .partner-box.large .partner-img { max-height: 4rem; }
 
-  /* Footer — stack buttons vertically */
+  /* Footer — stack buttons vertically and center */
   .partners-footer {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 1rem;
     padding-top: 2rem;
   }
