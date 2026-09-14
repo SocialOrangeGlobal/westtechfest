@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 
 const AboutStats = () => {
   return (
@@ -28,3 +28,4 @@ const AboutStats = () => {
 };
 
 export default AboutStats;
+

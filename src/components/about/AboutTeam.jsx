@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 
 const festivalFounders = [
   {
@@ -224,3 +224,4 @@ const AboutTeam = () => {
 };
 
 export default AboutTeam;
+

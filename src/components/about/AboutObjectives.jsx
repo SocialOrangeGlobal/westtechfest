@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 
 const AboutObjectives = () => {
   return (
@@ -52,7 +52,7 @@ const AboutObjectives = () => {
               </div>
               <div className="list-item">
                 <h3 className="item-title">GLOBALLY INSPIRED</h3>
-                <p className="item-desc">We provide a platform to explore and engage with innovative ideas from around the world, all in one fantastic location � Perth.</p>
+                <p className="item-desc">We provide a platform to explore and engage with innovative ideas from around the world, all in one fantastic location — Perth.</p>
               </div>
             </div>
           </div>
@@ -63,3 +63,4 @@ const AboutObjectives = () => {
 };
 
 export default AboutObjectives;
+

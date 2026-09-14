@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import AboutHero from '../components/about/AboutHero';
 import AboutStory from '../components/about/AboutStory';
 import AboutObjectives from '../components/about/AboutObjectives';
@@ -23,3 +23,4 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
+

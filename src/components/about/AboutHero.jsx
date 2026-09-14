@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 
 const AboutHero = () => {
   return (
@@ -9,7 +9,7 @@ const AboutHero = () => {
         </div>
         <h1 className="hero-title">About the festival.</h1>
         <p className="hero-subtitle">
-          West Tech Fest is Western Australia's flagship technology festival � built to put the West's founders, entrepreneurs and investors on the world stage.
+          West Tech Fest is Western Australia's flagship technology festival — built to put the West's founders, entrepreneurs and investors on the world stage.
         </p>
       </div>
     </section>
@@ -17,3 +17,4 @@ const AboutHero = () => {
 };
 
 export default AboutHero;
+
