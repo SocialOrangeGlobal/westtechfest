@@ -22,15 +22,15 @@ const Speakers = () => {
           
           <div className="speakers-title-row">
             <h2 className="speakers-title">First voices on the line-up.</h2>
-            <a href="/speakers" className="view-all-link">
+            <Link to="/speakers" className="view-all-link">
               VIEW ALL SPEAKERS <ArrowRight size={14} />
-            </a>
+            </Link>
           </div>
         </div>
 
         <div className="speakers-grid">
           {speakersList.map((speaker, idx) => (
-            <a href={`/speakers/${speaker.name.toLowerCase().replace(/ /g, '-')}`} className="speaker-card" key={idx}>
+            <Link to={`/speakers/${speaker.name.toLowerCase().replace(/ /g, '-')}`} className="speaker-card" key={idx}>
               <div className="speaker-img-wrapper">
                 <img src={speaker.img} alt={speaker.name} className="speaker-img" />
               </div>
@@ -38,7 +38,7 @@ const Speakers = () => {
                 <h3 className="speaker-name">{speaker.name}</h3>
                 <p className="speaker-role">{speaker.role}</p>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
 
