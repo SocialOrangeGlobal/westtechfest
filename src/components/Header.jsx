@@ -26,7 +26,7 @@ const Header = () => {
         </nav>
 
         <div className="actions">
-          <a href="/festival-pass" className="btn-primary">Get Tickets</a>
+          <Link to="/festival-pass" className="btn-primary">Get Tickets</Link>
           <button className="menu-btn" onClick={toggleMenu} aria-label="Toggle menu">
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>

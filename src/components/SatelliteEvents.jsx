@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ArrowRight, Plus } from 'lucide-react';
 import './SatelliteEvents.css';
 
@@ -15,7 +16,7 @@ const SatelliteEvents = () => {
         </div>
         
         <div className="se-links">
-          <a href="/satellite-events" className="se-link-item">
+          <Link to="/satellite-events" className="se-link-item">
             <div className="se-link-text">
               <span className="se-link-title">Browse satellite events</span>
               <span className="se-link-desc">See what’s on across the week</span>
@@ -23,9 +24,9 @@ const SatelliteEvents = () => {
             <span className="se-icon-wrap">
               <ArrowRight size={16} />
             </span>
-          </a>
+          </Link>
           
-          <a href="/satellite-events/submit" className="se-link-item">
+          <Link to="/satellite-events/submit" className="se-link-item">
             <div className="se-link-text">
               <span className="se-link-title">Submit your event</span>
               <span className="se-link-desc">Host something during festival week</span>
@@ -33,7 +34,7 @@ const SatelliteEvents = () => {
             <span className="se-icon-wrap">
               <Plus size={16} />
             </span>
-          </a>
+          </Link>
           
           <div className="se-footer">
             <span className="dot bg-accent-solid" style={{width: 6, height: 6}}></span>

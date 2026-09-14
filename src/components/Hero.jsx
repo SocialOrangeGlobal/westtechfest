@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import './Hero.css';
 
@@ -26,12 +27,12 @@ const Hero = () => {
               A week of keynotes, summits and satellite events across the city, where Western Australia’s founders, investors and technologists meet the world.
             </p>
             <div className="hero-actions">
-              <a href="/festival-pass" className="btn-primary">
+              <Link to="/festival-pass" className="btn-primary">
                 Get Tickets <ArrowRight size={16} />
-              </a>
-              <a href="/events" className="btn-secondary">
+              </Link>
+              <Link to="/events" className="btn-secondary">
                 Explore the Program
-              </a>
+              </Link>
             </div>
           </div>
 

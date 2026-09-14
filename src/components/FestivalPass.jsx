@@ -1,5 +1,6 @@
 import React from 'react';
-import { ArrowUpRight, ArrowRight, Users } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { ArrowRight, ArrowUpRight, Users } from 'lucide-react';
 import './FestivalPass.css';
 
 const events = [
@@ -30,7 +31,7 @@ const FestivalPass = () => {
 
         <div className="fp-grid">
           {events.map((event) => (
-            <a href={`/events/${event.title.toLowerCase().replace(/ /g, '-')}`} className={`event-card ${event.theme}`} key={event.id}>
+            <Link to={`/events/${event.title.toLowerCase().replace(/ /g, '-')}`} className={`event-card ${event.theme}`} key={event.id}>
               <div className="ec-header">
                 <span className="ec-number" style={{ color: event.color }}>{event.id}</span>
                 <span className="ec-date">{event.date}</span>
@@ -55,7 +56,7 @@ const FestivalPass = () => {
                 <span className="ec-footer-text">INCLUDED IN PASS</span>
                 <ArrowUpRight size={16} color={event.theme === 'dark' ? '#fff' : '#000'} />
               </div>
-            </a>
+            </Link>
           ))}
         </div>
 
@@ -65,12 +66,12 @@ const FestivalPass = () => {
             <span>One pass. Six headline events. The best way to optimise your week.</span>
           </div>
           <div className="fp-cta-actions">
-            <a href="/festival-pass" className="btn-secondary">
+            <Link to="/festival-pass" className="btn-secondary">
               <Users size={16} /> BUY FOR YOUR TEAM
-            </a>
-            <a href="/festival-pass" className="btn-primary">
+            </Link>
+            <Link to="/festival-pass" className="btn-primary">
               GET THE FESTIVAL PASS <ArrowRight size={16} />
-            </a>
+            </Link>
           </div>
         </div>
 
